@@ -4,8 +4,13 @@
 #include <string.h>
 #include <sys/time.h>
 #include <time.h>
+#include <locale.h>
+
+ 
 
 int main() {
+    setlocale(LC_ALL, "es_ES");
+
     time_t t = time(NULL);
     struct tm *info = localtime(&t);
 
