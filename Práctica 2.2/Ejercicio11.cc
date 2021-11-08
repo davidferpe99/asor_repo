@@ -19,7 +19,7 @@ int main(int argc, char **argv){
 
     int statint = stat(argv[1], &buff);
 
-    if (statint = -1){
+    if (statint == -1){
         printf("Error: No existe el directorio.\n");
         return -1;
     }
@@ -29,10 +29,13 @@ int main(int argc, char **argv){
     strcpy(hard, argv[1]);
     strcpy(sym, argv[1]);
 
+    hard = strcat(hard, ".hard");
+    hard = strcat(sym, ".sym");
+
     printf("Hard: %s\n", hard);
     printf("Sym: %s\n", sym);
 
-    mode_t mode = buff-st_mode;
+    mode_t mode = buff.st_mode;
 
     if (S_ISREG(mode)){
         printf("%s es un archivo ordinario.\n", argv[1]);
@@ -56,8 +59,6 @@ int main(int argc, char **argv){
 
         printf("Error: La ruta introducida no se trata de un fichero.\n");
     }
-
-
 
 
 
