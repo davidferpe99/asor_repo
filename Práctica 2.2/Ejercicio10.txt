@@ -1,0 +1,10 @@
+Inodo enlace simbólico a fichero: 3577001
+Inodo enlace simbólico a directorio: 3577005
+Inodo enlace rígido a fichero: 3576984
+Enlace ríogido a directorio no posible.
+
+Cuando borramos un enlace simbólico este enlace se borra junto con los inodos que apuntan al fichero seleccionado y cuando eliminamos
+un enlace rígido siempre que quede el original no sucede nada ya que tanto origen como destino son el mismo fichero.
+
+Si eliminamos el archivo, en el caso de los enlaces simbólicos, estos quedan intactos, sin embargo, los enlaces rigidos desaparecen también, 
+ya que apuntan a la misma direccion de memoria.
