@@ -12,8 +12,8 @@ int main(){
 
     mode_t mask = umask(027);
 
-    int file = open("fichero2.txt", O_CREAT | O_RDONLY, 0777);
-
+    int file = open("fichero2.txt", O_CREAT | O_RDONLY | O_TRUNC, 0777);
+    
 
 
     return 1;
