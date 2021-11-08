@@ -12,7 +12,7 @@ int main(){
 
    
 
-    int df = open(path, O_CREAT, 0645);
+    int file = open(path, O_CREAT, 0645);
 
 
 
