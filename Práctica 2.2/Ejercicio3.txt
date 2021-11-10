@@ -1,2 +1,2 @@
 chmod 645 fichero.txt
-chmod u+rw-x,g+r-wx,o+rx fichero.txt
+chmod u+rw-x,g+r-wx,o+rx-w fichero.txt
