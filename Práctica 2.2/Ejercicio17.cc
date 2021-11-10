@@ -59,6 +59,8 @@ int main( int argc, char **argv){
         free(path);
         current = readdir(directorio);
     }
+
+    printf("Tamaño total: %li kilobytes\n", totalsize);
    
    closedir(directorio);
    return 0;
