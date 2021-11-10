@@ -29,3 +29,6 @@ int main( int argc, char **argv){
     dup2(fd3,fd);
     return 1;
 }
+
+//ls>dirlist>&1: Redirecciona la salida estandar a dirlist y luego la salida de errores a la 1 que corresponde a dirlist, en conclusión, ambas salidas se van a ver en dirlist.
+//ls 2>&1>dirlist: Redirecciona lña salida de error a la salida estandar y la salida estandar a dirlist, por lo que los errores se van a ver por pantalla y la salida normal en el fichero dirlist.
