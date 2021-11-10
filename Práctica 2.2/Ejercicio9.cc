@@ -57,3 +57,5 @@ int main(int argc, char **argv){
 
     return 0;
 }
+//st_mtime muestra la fecha de la ultima modificación del archivo
+//st_ctime muestra la ulñtima modificación ya sea de permisos, del archivo, de nombre, etc.
