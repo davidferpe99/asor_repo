@@ -7,6 +7,7 @@
 #include <string.h>
 #include <sys/sysmacros.h>
 #include <time.h>
+#include <stdlib.h>
 
 int main(int argc, char **argv){
 
@@ -19,7 +20,7 @@ int main(int argc, char **argv){
 
     int statint = stat(argv[1], &buff);
 
-    if (statint == -1){
+    if (statint = -1){
         printf("Error: No existe el directorio.\n");
         return -1;
     }
@@ -47,7 +48,7 @@ int main(int argc, char **argv){
             printf("Seha creado el enlace rígido.\n");
         }
 
-        if (link(argv[1], sym) == -1){
+        if (symlink(argv[1], sym) == -1){
             printf("Error: No es posible crear el enlace simbólico.\n");
         }
         else{
