@@ -1,0 +1,1 @@
+Estos comparten el GIP y el SID. Es el ID del usuario que crea dicho proceso.
